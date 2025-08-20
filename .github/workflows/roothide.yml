@@ -16,7 +16,7 @@ jobs:
       - name: Checkout
         run: |
           set -x
-          git clone --recursive https://github.com/roothide/Dopamine2-roothide ${{ github.workspace }}
+          git clone https://github.com/roothide/Dopamine2-roothide ${{ github.workspace }}
           git checkout --recurse-submodules 11
           
       - name: Install Procursus
